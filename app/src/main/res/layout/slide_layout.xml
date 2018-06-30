@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:textAlignment="center">
+
+    <ImageView
+        android:id="@+id/slide_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/slide_description"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/slide_description"
+        android:layout_marginBottom="300dp"
+        app:srcCompat="@drawable/wallets" />
+
+    <TextView
+        android:id="@+id/slide_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:height="45dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="Serviço de carteira"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:theme="@style/Animation.AppCompat.Dialog" />
+
+    <TextView
+        android:id="@+id/slide_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/background_dark"
+        android:backgroundTintMode="src_over"
+        android:text="No PayPortal você pode enviar e receber suas criptomoedas e ativos digitais! Desfrute de um serviço único para vários ativos.\n"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:theme="@style/Base.DialogWindowTitleBackground.AppCompat" />
+</RelativeLayout>
